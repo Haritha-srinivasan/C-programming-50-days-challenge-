@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main(){
+
+    int n1=3,n2=3,n3,i,j,k;
+    int a[3]={1, 2, 3};
+    int b[3]={1, 2, 3};
+    int c[6];
+    n3=6;
+    
+    for(i=0;i<3;i++){
+        c[i]=a[i];}
+        for(j=0;j<3;j++){
+            c[i]=b[j];
+            i++;
+        }
+        for(i=0;i<6;i++){
+            for(k=0;k<5;k++){
+                if(c[k]>c[k+1]){
+                j=c[k+1];
+                c[k+1]=c[k];
+                c[k]=j; 
+            }
+        }
+        }
+        for(i=0;i<6;i++){
+    
+    printf("%d\t",c[i]);
+    }
+    printf("\n\n");
+    return 0;
+}
