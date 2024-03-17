@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(){
+  int id,unit,surcharge=240;
+  float netamount;
+  char name[5];
+  printf("enter id");
+  scanf("%d",&id);
+  printf("enter unit");
+  scanf("%d",&unit);
+  printf("enter name");
+scanf("%s",name);
+
+if(unit==199){
+    netamount=1.20;
+    }
+    else if(unit>199&&unit<400)
+    {
+    netamount=1.50;
+    }
+    else if(unit>400&&unit<600){
+    netamount=1.80;
+    }
+    else{
+     netamount=2;
+     }
+     int c=(unit*netamount)+surcharge;
+printf("\ncustomer idno=%d",id);
+printf("\ncustomer name= %s",name);
+printf("\nunit consumed= %d",unit );
+printf("\nsurchare amount=240");
+printf("\nnetamount paid= %d",c);
+return 0;
+}
