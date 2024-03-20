@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main(){
+    int rollno,maths,english,tamil,total;
+    char name[50];
+    printf("enter values");
+    scanf("%d %d %d %d %s",&rollno,&maths,&english,&tamil,&name);
+    printf("              details                ");
+    printf("\nroll n0=%d",rollno);
+    printf("\nmaths=%d",maths);
+    printf("\nenglish=%d",english);
+    printf("\ntamil=%d",tamil);
+    total=maths+english+tamil;
+    printf("total:%d",total);
+     float percentage= total/3;
+     printf("\npercentage=%f",percentage);
+    if(total>200){
+        printf("\ndivision: distintion");
+    }
+    else if(total>150&&total<200){
+         printf("\ndivision:first");
+    }
+    else{
+        printf("\ndivision:pass");
+    }}
